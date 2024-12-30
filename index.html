@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Network</title>
+  </head>
+  <body class="bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-white mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M8.048 2.241c.964-.709 2.079-1.238 3.325-1.241a4.616 4.616 0 0 1 3.282 1.355c.41.408.757.86.996 1.428.238.568.348 1.206.347 1.968 0 2.193-1.505 4.254-3.081 5.862-1.496 1.526-3.213 2.796-4.249 3.563l-.22.163a.749.749 0 0 1-.895 0l-.221-.163c-1.036-.767-2.753-2.037-4.249-3.563C1.51 10.008.007 7.952.002 5.762a4.614 4.614 0 0 1 1.353-3.407C3.123.585 6.223.537 8.048 2.24Zm-1.153.983c-1.25-1.033-3.321-.967-4.48.191a3.115 3.115 0 0 0-.913 2.335c0 1.556 1.109 3.24 2.652 4.813C5.463 11.898 6.96 13.032 8 13.805c.353-.262.758-.565 1.191-.905l-1.326-1.223a.75.75 0 0 1 1.018-1.102l1.48 1.366c.328-.281.659-.577.984-.887L9.99 9.802a.75.75 0 1 1 1.019-1.103l1.384 1.28c.295-.329.566-.661.81-.995L12.92 8.7l-1.167-1.168c-.674-.671-1.78-.664-2.474.03-.268.269-.538.537-.802.797-.893.882-2.319.843-3.185-.032-.346-.35-.693-.697-1.043-1.047a.75.75 0 0 1-.04-1.016c.162-.191.336-.401.52-.623.62-.748 1.356-1.637 2.166-2.417Zm7.112 4.442c.313-.65.491-1.293.491-1.916v-.001c0-.614-.088-1.045-.23-1.385-.143-.339-.357-.633-.673-.949a3.111 3.111 0 0 0-2.218-.915c-1.092.003-2.165.627-3.226 1.602-.823.755-1.554 1.637-2.228 2.45l-.127.154.562.566a.755.755 0 0 0 1.066.02l.794-.79c1.258-1.258 3.312-1.31 4.594-.032.396.394.792.791 1.173 1.173Z"
+            ></path>
+          </svg>
+          MyNetwork</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="dropdown ms-4">
+            <a
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                width="40"
+                height="40"
+                class="rounded-circle avatar"
+                src="img/avatar.jpg"
+                alt=""
+              />
+            </a>
+            <ul
+              class="dropdown-menu border-0 shadow w-220px"
+              data-bs-theme="light"
+            >
+              <li>
+                <a
+                  class="dropdown-item d-flex gap-2 align-items-center"
+                  href="#"
+                >
+                  <svg class="bi" width="16" height="16">
+                    <use xlink:href="#files"></use>
+                  </svg>
+                  Documents
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item d-flex gap-2 align-items-center"
+                  href="#"
+                >
+                  <svg class="bi" width="16" height="16">
+                    <use xlink:href="#image-fill"></use>
+                  </svg>
+                  Photos
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item d-flex gap-2 align-items-center"
+                  href="#"
+                >
+                  <svg class="bi" width="16" height="16">
+                    <use xlink:href="#film"></use>
+                  </svg>
+                  Movies
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item d-flex gap-2 align-items-center"
+                  href="#"
+                >
+                  <svg class="bi" width="16" height="16">
+                    <use xlink:href="#music-note-beamed"></use>
+                  </svg>
+                  Music
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item d-flex gap-2 align-items-center"
+                  href="#"
+                >
+                  <svg class="bi" width="16" height="16">
+                    <use xlink:href="#joystick"></use>
+                  </svg>
+                  Games
+                </a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item d-flex gap-2 align-items-center"
+                  href="#"
+                >
+                  <svg class="bi" width="16" height="16">
+                    <use xlink:href="#trash"></use>
+                  </svg>
+                  Trash
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-3">
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">
+                <svg
+                  class="me-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="#fff"
+                    d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"
+                  ></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg
+                  class="me-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"
+                  ></path>
+                </svg>
+                Friends
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg
+                  class="me-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"
+                  ></path>
+                </svg>
+                Orders
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg
+                  class="me-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M10 13a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm-4 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5-9a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+                  ></path>
+                </svg>
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <svg
+                  class="me-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"
+                  ></path>
+                </svg>
+                Customers
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.col-lg-2 col-md-3 -->
+        <div class="col-lg-3 col-md-3">
+          <div class="card">
+            <img src="img/avatar.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <a href="#" class="btn w-100 btn-secondary mb-2">Редактировать</a>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-0 text-secondary">An item</li>
+                <li class="list-group-item border-0 text-secondary">
+                  A second item
+                </li>
+                <li class="list-group-item border-0 text-secondary">
+                  A third item
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Тимофеев Евгений</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <div class="text-secondary">
+                <hr />
+              </div>
+              <div class="row mb-2">
+                <div class="col-lg-4">
+                  <span class="text-secondary">День рождения:</span>
+                </div>
+                <div class="col-lg-8">
+                  <a href="#" class="link">7 июня</a>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-lg-4">
+                  <span class="text-secondary">Город:</span>
+                </div>
+                <div class="col-lg-8">
+                  <a href="#" class="link">Вешенская</a>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-lg-4">
+                  <span class="text-secondary">Семейное положение:</span>
+                </div>
+                <div class="col-lg-8">
+                  <a href="#" class="link">холост</a>
+                </div>
+              </div>
+              <div class="text-secondary">
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-jg-8 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
